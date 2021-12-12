@@ -3,4 +3,5 @@
   height: 100vh;
   background-image: url("./images/game-bg.png");
   background-size: contain;
+  color: white;
 }
