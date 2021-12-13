@@ -1,0 +1,22 @@
+.opponent {
+  width: 23%;
+  margin: 5px;
+  padding: 10px;
+  background-color: #292929;
+  border-radius: 10px;
+}
+
+.opponent span.date {
+  color: rgb(153, 152, 152);
+  font-size: 12px;
+}
+
+.opponent .fight {
+  margin-top: 5px;
+  width: 70px;
+  background-color: #faa82c;
+  border-radius: 4px;
+  text-transform: uppercase;
+  padding: 3px;
+  cursor: pointer;
+}

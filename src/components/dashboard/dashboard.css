@@ -1,0 +1,14 @@
+.dashboard {
+  margin-top: 50px;
+}
+
+.dashboard h1 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.opponents {
+  margin-top: 15px;
+  flex-wrap: wrap;
+}

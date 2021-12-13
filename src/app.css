@@ -1,7 +1,7 @@
 .app {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
   background-image: url("./images/game-bg.png");
   background-size: contain;
   color: white;
+  background-attachment: fixed;
 }
