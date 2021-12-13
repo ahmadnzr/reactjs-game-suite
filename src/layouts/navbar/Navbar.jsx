@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Container } from "react-bootstrap";
-import LoginUser from "../loginUser/LoginUser";
+import LoginUser from "../../components/loginUser/LoginUser";
 import "./navbar.css";
 
 const Navbar = () => {
