@@ -1,10 +1,19 @@
 import CardOpponent from "../../components/cardOpponent/CardOpponent";
-import Level from "../../components/level/Level";
 import Footer from "../../layouts/footer/Footer";
 import Navbar from "../../layouts/navbar/Navbar";
 import "./home.css";
 
+import levels from "../../data/level.json";
+import opponents from "../../data/opponents.json";
+import { useState } from "react";
+
 const Home = () => {
+  const [selectedOpponent, setSelectedOpponent] = useState(opponents);
+
+  const changeOpponent = (level) => {
+    setSelectedOpponent(opponents.filter((o) => o.level === level));
+  };
+
   return (
     <>
       <Navbar />
@@ -12,25 +21,20 @@ const Home = () => {
         <h1>chooce your opponent</h1>
         <div className="container">
           <div className="row">
-            {[
-              "novice",
-              "class a",
-              "class b",
-              "class c",
-              "class d",
-              "candidate master",
-              "grand master",
-            ].map((name, i) => (
-              <Level key={i} name={name} />
+            {levels.map((level) => (
+              <div
+                className="col-md level-list d-flex align-items-center justify-content-center"
+                onClick={() => changeOpponent(level.name)}
+              >
+                {level.name}
+              </div>
             ))}
           </div>
         </div>
         <div className="contaner opponents d-flex justify-content-between flex-wrap">
-          {[1, 2, 3, 4, 5, 6, 2, 1, 23, 1, 2, 31, 2, 4, 2, 1, 2, 2, 2, 2].map(
-            (a) => (
-              <CardOpponent />
-            )
-          )}
+          {selectedOpponent.map((opponent) => (
+            <CardOpponent key={opponent.id} opponent={opponent} />
+          ))}
         </div>
       </div>
       <Footer />

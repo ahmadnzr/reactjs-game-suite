@@ -12,3 +12,17 @@
   margin-top: 15px;
   flex-wrap: wrap;
 }
+
+.level-list {
+  background-color: #292929;
+  border-radius: 10px;
+  height: 80px;
+  margin: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+
+.level-list:hover {
+  background-color: #faa82c;
+}

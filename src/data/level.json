@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "INVOICE"
+  },
+  {
+    "id": 2,
+    "name": "CLASS A"
+  },
+  {
+    "id": 3,
+    "name": "CLASS B"
+  },
+  {
+    "id": 4,
+    "name": "CLASS C"
+  },
+  {
+    "id": 5,
+    "name": "CLASS D"
+  },
+  {
+    "id": 6,
+    "name": "CANDIDATE MASTER"
+  },
+  {
+    "id": 7,
+    "name": "GRAND MASTER"
+  }
+]
