@@ -1,5 +1,5 @@
-import Level from "../../level/Level";
 import CardOpponent from "../cardOpponent/CardOpponent";
+import Level from "../level/Level";
 import "./dashboard.css";
 
 const Dashboard = () => {
