@@ -1,14 +1,17 @@
+import { Route, Routes } from "react-router";
 import "./app.css";
-import Dashboard from "./components/dashboard/Dashboard";
-import Footer from "./layouts/footer/Footer";
-import Navbar from "./layouts/navbar/Navbar";
+import Home from "./pages/home/Home";
+import Login from "./pages/login/Login";
+import Register from "./pages/login/Register";
 
 function App() {
   return (
     <div className="app">
-      <Navbar />
-      <Dashboard />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+      </Routes>
     </div>
   );
 }

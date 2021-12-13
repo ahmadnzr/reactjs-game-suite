@@ -1,0 +1,35 @@
+.login {
+  width: 100vw;
+  height: 100vh;
+}
+.form-card {
+  background-color: white;
+  width: 350px;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.form-card h2 {
+  color: black;
+}
+
+.form-card form {
+  padding: 40px 0;
+}
+
+.form-card form input {
+  background-color: rgb(211, 211, 211);
+  padding: 9px 8px;
+  margin: 5px 0;
+}
+
+.form-card button {
+  padding: 9px 8px;
+  border: none;
+  background-color: #faa82c;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.form-card button:hover {
+  background-color: #faa82c;
+}
