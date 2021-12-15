@@ -33,3 +33,8 @@
 .form-card button:hover {
   background-color: #faa82c;
 }
+
+.form-card ul{
+  align-self: flex-start;
+  color: red;
+}

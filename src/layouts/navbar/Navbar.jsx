@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import LoginUser from "../../components/loginUser/LoginUser";
 import "./navbar.css";
 
-const Navbar = () => {
+const Navbar = ({ user }) => {
   const [box, setBox] = useState(false);
 
   return (
@@ -16,8 +17,17 @@ const Navbar = () => {
           >
             <h3 className="navbar-title">game suite</h3>
             <div className="navbar-user">
-              <span onClick={() => setBox(!box)}>Jokowi</span>
-              {box && <LoginUser />}
+              {user.length < 1 ? (
+                <>
+                  <Link to="/login">Login</Link>
+                  <Link to="/register">Register</Link>
+                </>
+              ) : (
+                <>
+                  <span onClick={() => setBox(!box)}>Jokowi</span>
+                  {box && <LoginUser />}
+                </>
+              )}
             </div>
           </div>
         </div>

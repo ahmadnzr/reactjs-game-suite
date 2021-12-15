@@ -7,7 +7,7 @@ import levels from "../../data/level.json";
 import opponents from "../../data/opponents.json";
 import { useState } from "react";
 
-const Home = () => {
+const Home = ({ user }) => {
   const [selectedOpponent, setSelectedOpponent] = useState(opponents);
 
   const changeOpponent = (level) => {
@@ -16,7 +16,7 @@ const Home = () => {
 
   return (
     <>
-      <Navbar />
+      <Navbar user={user} />
       <div className="container dashboard">
         <h1>chooce your opponent</h1>
         <div className="container">
@@ -25,6 +25,7 @@ const Home = () => {
               <div
                 className="col-md level-list d-flex align-items-center justify-content-center"
                 onClick={() => changeOpponent(level.name)}
+                key={level.id}
               >
                 {level.name}
               </div>
